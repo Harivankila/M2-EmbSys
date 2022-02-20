@@ -36,7 +36,6 @@
 # Voltage Regulator
 * voltage regulator, any electrical or electronic device that maintains the voltage of a power source within acceptable limits. 
 * The voltage regulator is needed to keep voltages within the prescribed range that can be tolerated by the electrical equipment using that voltage.
-# C
 
 # Barcode Scanner
 *A barcode scanner is an optical scanner that can read printed barcodes, decode the data contained in the barcode and send the data to a computer. 
