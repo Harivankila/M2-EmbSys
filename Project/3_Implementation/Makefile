@@ -1,12 +1,12 @@
-PROJ_NAME = PASSANGER_SEAT_AND_HEAT_MONITORING_SYSTEM
+PROJ_NAME = M2_Project
 
 BUILD_DIR = Build
 
 # All Source code files
 SRC = main_test/main.c\
-src/activity1.c\
-src/activity2.c\
-src/activity3.c
+src/led.c\
+src/lcd.c.c\
+src/display.c.c
 
 # All header file paths
 INC = -I inc
