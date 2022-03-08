@@ -1,45 +1,47 @@
+* @file main.c
+
 #include <avr/io.h>
 #include<util/delay.h>
-#include "activity1.h"
-#include "activity2.h"
-#include"activity3.h"
-int main()
+#include "Activity1.h"
+#include "Activity2.h"
+#include"Activity3.h"
+int main(void)
 {
-    seat_sensing();
-    adc_initialization();
-    timer_initialization();
-    lcd_initialization();			/* Initialization of LCD*/
+    SEAT_CHECKING(); //Initializing Drivers seat
+    ADC_INITIALIZATION(); //Initializing ADC to accept temperature values
+    TIMER_INITIALIZATION(); //Initializing Timer by dividing clock with 64 prescale
+    LCD_INITIALIZATION(); //Initializing LCD
 
-    uint16_t temp_var;
+    uint16_t read;
 
 	while(1)
     {
-        if(seat_sense)
+        if(SEAT_CHECK)
         {
-            PORTD|=(1<<PD4);
-            if(heater_set){
-                led_set;
+            PORTD|=(1<<PD2);
+            if(HEATER_ON){
+                LED_ON;
                 _delay_ms(200);
-                lcd_off();
-                temp_var=adc_sense(2);
-                pwm_out(temp_var);
+                CLEAR_LCD();
+                read=SENSE_ADC(0);
+                PWM_OUPUT(read);
 
             }
             else
                 {
-                    led_clear;
+                    LED_OFF;
                      _delay_ms(200);
-                    heater_clear;
+                    HEATER_OFF;
                     _delay_ms(200);
-                    lcd_off();
+                    CLEAR_LCD();
                 }
         }
         else{
-            led_clear;
+            LED_OFF;
             _delay_ms(200);
-            heater_clear;
+            HEATER_OFF;
             _delay_ms(200);
-            lcd_off();
+            CLEAR_LCD();
         }
     }
     return 0;
