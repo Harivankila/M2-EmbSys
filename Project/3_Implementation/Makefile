@@ -1,12 +1,12 @@
-PROJ_NAME = PASSANGER_SEAT_AND_HEAT_MONITORING_SYSTEM
+PROJ_NAME = Heat_Monitoring
 
 BUILD_DIR = Build
 
 # All Source code files
-SRC = main_test/main.c\
-src/activity1.c\
-src/activity2.c\
-src/activity3.c
+SRC = main.c\
+src/Activity1.c\
+src/Activity2.c\
+src/Activity3.c
 
 # All header file paths
 INC = -I inc
@@ -53,4 +53,3 @@ clean:
 # Remove all the build files and generated document files
 	rm -rf $(call FixPath,$(BUILD_DIR)/*)
 	make -C documentation clean
-  
