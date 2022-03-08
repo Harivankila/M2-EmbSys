@@ -11,7 +11,7 @@ Monitoring is one of the principal matters of our project. In this technology, i
 * Driver and the passanger could have the get entry to to chaning the temperature withinside the automobile.
 * The passanger can alternate the temperature via way of means of looking the show because the show is given withinside the system
 
-# SWOT Analysis
+# SWOT-Strengths,Weakness,Oppurtunities and Threats
 
 # Strenghts
 * Easy to adjust the temperature value.
@@ -28,6 +28,11 @@ Monitoring is one of the principal matters of our project. In this technology, i
 
 # Threats
 * Not suitable for average or high temperature environment.
+
+# 4W's and 1'H
+* WHAT : STEPin_Seat_Temperature_Monitoring_System
+* WHERE : Used in Automotive Industries
+* WHEN : At low Temperature
 
 # Requirements
 
