@@ -28,3 +28,7 @@
 
 # 1.6 Push Button Switch
 * Push button switch is connected to the microcontroller through a switch inorde to limit the flowing current.
+
+# 2 Flow Chart
+
+![image](https://user-images.githubusercontent.com/98792351/157175366-a54343db-4e8e-4405-bf6f-b1a4030b5a54.png)
